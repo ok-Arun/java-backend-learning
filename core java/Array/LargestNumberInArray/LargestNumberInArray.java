@@ -44,7 +44,8 @@ public class LargestNumberInArray{
             System.out.println("Enter valid size");
         }else{
             int[] a = new int[size];
-            
+
+            System.out.println("Enter "+size+" number for the Array: ");
             for(int i = 0; i < size; i++){
                 a[i] = scn.nextInt();
             }
