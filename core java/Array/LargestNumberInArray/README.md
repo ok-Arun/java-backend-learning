@@ -1,5 +1,7 @@
 # Find the Largest Number in an Array
 
+**Source Code:** [LargestNumberInArray.java](./LargestNumberInArray.java)
+
 ## Problem Statement
 
 Given an integer array, find and return the largest element in the array.
@@ -20,49 +22,26 @@ This approach examines each element once without sorting the array.
 
 **Input**
 ```text
-Enter the length of Array : 5
+5
 10 25 7 40 15
 ```
 
-**Output**
+**Expected Output**
 ```text
 Largest Number in Array is: 40
 ```
 
 ## Algorithm
 
-```text
-START
-  |
-  v
-Validate the array
-  |
-  v
-Initialize largest = array[0]
-  |
-  v
-Traverse remaining elements
-  |
-  v
-Is current element > largest?
-  |
-  +---- Yes ----> Update largest
-  |                   |
-  +---- No ------------+
-                      |
-                      v
-              More elements?
-                |         |
-               Yes        No
-                |         |
-                v         v
-             Continue   Return largest
-```
+1. Initialize `largest` with the first array element.
+2. Compare each remaining element with `largest`.
+3. Update `largest` whenever a greater element is found.
+4. Return `largest` after traversing the array.
 
 ## Complexity Analysis
 
-- **Time Complexity: O(n)** — the algorithm traverses the array once, where `n` is the number of elements.
-- **Auxiliary Space: O(1)** — the `findLargest()` method uses a fixed number of variables, excluding the input array.
+- **Time Complexity:** O(n) — each array element is examined at most once.
+- **Auxiliary Space:** O(1) for the `findLargest()` method, excluding the input array.
 
 ## Edge Cases
 
@@ -73,32 +52,30 @@ Is current element > largest?
 | `[7]` | `7` |
 | `[5, 5, 5]` | `5` |
 | `[Integer.MIN_VALUE, 0]` | `0` |
-| `[]` | Throws `IllegalArgumentException` |
-| `null` | Throws `IllegalArgumentException` |
+| Empty array `[]` | Throws `IllegalArgumentException` |
+| `null` array | Throws `IllegalArgumentException` |
 
 ## Concepts Practiced
 
-- Java arrays and array indexing
-- `Scanner` for user input
+- Arrays and array indexing
+- `Scanner` and user input
 - `for` loops and conditional statements
 - Methods and return values
 - Input validation
-- Exception handling with `IllegalArgumentException`
+- Exception handling
 - Time and auxiliary space complexity
 
 ## How to Run
 
-**Prerequisite:** Install the Java Development Kit (JDK).
-
-Open a terminal in this folder and run:
+Open a terminal in this folder and execute:
 
 ```bash
 javac LargestNumberInArray.java
 java LargestNumberInArray
 ```
 
-Enter the array size when prompted, followed by the array elements.
+Enter the array size, followed by the array elements.
 
 ## Learning Outcome
 
-This problem demonstrates how to find an extreme value efficiently using a single-pass traversal. The same pattern can be adapted to find the smallest, second-largest, or second-smallest distinct element in an array.
+Learn how to find the largest element efficiently using a single-pass traversal. This technique also provides a foundation for solving other array problems, such as finding the smallest and second-largest distinct elements.
