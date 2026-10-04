@@ -1,8 +1,33 @@
 /*
- * Problem: Find the second-largest distinct number in an array.
- * Approach: Single-pass traversal.
- * Concepts: Arrays, enhanced for loop, boolean flags,
- *           exception handling, edge cases.
+ * Problem:
+ * Find the second-largest distinct integer in an array.
+ *
+ * Approach:
+ * Use a single-pass traversal to track the largest and
+ * second-largest distinct values. Boolean flags indicate
+ * whether these values have been found, avoiding ambiguity
+ * when array elements include Integer.MIN_VALUE.
+ *
+ * Concepts Used:
+ * Arrays, enhanced for loop, conditional statements,
+ * boolean flags, methods, exception handling, and validation.
+ *
+ * Sample Input:
+ * [10, 20, 30, 40, 50]
+ *
+ * Expected Output:
+ * 40
+ *
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(1), excluding the input array.
+ *
+ * Edge Cases:
+ * - Null array
+ * - Array with fewer than two elements
+ * - All elements are identical
+ * - Duplicate values
+ * - Negative numbers
+ * - Integer.MIN_VALUE and Integer.MAX_VALUE
  */
 
 public class SecondLargestDistinctNumber{
@@ -19,7 +44,7 @@ public class SecondLargestDistinctNumber{
     for(int i=0; i<testCase.length; i++){
         try{
             int result = findSecondLargest(testCase[i]);
-            System.out.print("The Second Largest number in Array of tase case "+(i+1)+" is : "+result+"\n");
+            System.out.print("The Second Largest number in Test case "+(i+1)+" is : "+result+"\n");
         }catch(IllegalArgumentException ex){
             System.out.println("test case"+(i+1));
             System.out.println("Error : "+ex.getMessage());
