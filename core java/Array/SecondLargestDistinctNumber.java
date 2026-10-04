@@ -5,7 +5,7 @@
  *           exception handling, edge cases.
  */
 
-public class Main{
+public class SecondLargestDistinctNumber{
   public static void main(String args[]){
 
     int[] a = {-10, Integer.MIN_VALUE};
