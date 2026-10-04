@@ -1,6 +1,6 @@
 # Find the Second-Largest Distinct Number in an Array
 
- view - **Source Code:** [SecondLargestDistinctNumber.java](./SecondLargestDistinctNumber.java)
+**Source Code:** [SecondLargestDistinctNumber.java](./SecondLargestDistinctNumber.java)
 
 ## Problem Statement
 
