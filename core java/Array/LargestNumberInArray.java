@@ -1,3 +1,37 @@
+/*
+ * Problem:
+ * Find the largest integer in an array.
+ *
+ * Approach:
+ * Initialize the largest value with the first array element.
+ * Traverse the remaining elements and update the largest value
+ * whenever a greater element is found.
+ *
+ * Concepts Used:
+ * Arrays, Scanner, for loop, enhanced input handling,
+ * conditional statements, methods, exception handling,
+ * and input validation.
+ *
+ * Sample Input:
+ * 5
+ * 10 25 7 40 15
+ *
+ * Expected Output:
+ * Largest Number in Array is: 40
+ *
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(1) for the findLargest() method,
+ * excluding the input array.
+ *
+ * Edge Cases:
+ * - Null array
+ * - Empty array
+ * - Array containing negative numbers
+ * - Array containing a single element
+ * - Integer boundary values
+ */
+
+
 import java.util.*;
 
 public class LargestNumberInArray{
