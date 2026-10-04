@@ -7,8 +7,8 @@ A collection of array problems solved using Core Java, with an emphasis on probl
 | No. | Problem | Approach | Time Complexity | Auxiliary Space |
 |---:|---|---|---|---|
 | 1 | [Find the Largest Number](./LargestNumberInArray/README.md) | Single-pass traversal | O(n) | O(1) |
-| 2 | [Find the Second-Largest Distinct Number](./SecondLargestDistinctNumber.java) | Single-pass traversal | O(n) | O(1) |
-| 3 | [Find the Second-Smallest Distinct Number](./SecondSmallestDistinctNumber.java) | Single-pass traversal | O(n) | O(1) |
+| 2 | [Find the Second-Largest Distinct Number](./SecondLargestDistinctNumber/README.md) | Single-pass traversal | O(n) | O(1) |
+| 3 | [Find the Second-Smallest Distinct Number](./SecondSmallestDistinctNumber/README.md) | Single-pass traversal | O(n) | O(1) |
 
 Click any problem name to view its Java source code.
 
